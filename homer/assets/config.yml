@@ -1,0 +1,217 @@
+title: "HAL"
+subtitle: "Happy App Land"
+logo: "/assets/assets/cy2.png"
+icon: "/assets/assets/favicon.ico" # Optional icon
+
+header: true
+footer: false
+
+columns: "4" # "auto" or number (must be a factor of 12: 1, 2, 3, 4, 6, 12)
+#connectivityCheck: true # whether you want to display a message when the apps are not accessible anymore (VPN disconnected for example).
+                        # You should set it to true when using an authentication proxy, it also reloads the page when a redirection is detected when checking connectivity.
+
+# Optional: Proxy / hosting option
+#proxy:
+#  useCredentials: false # send cookies & authorization headers when fetching service specific data. Set to `true` if you use an authentication proxy. Can be overrided on service level.
+
+# Set the default layout and color scheme
+defaults:
+  layout: list # Either 'columns', or 'list'
+  colorTheme: dark # One of 'auto', 'light', or 'dark'
+
+# Optional theme customization
+theme: default
+colors:
+  dark:
+    highlight-primary: "#fffff"
+    highlight-secondary: "#131313"
+    highlight-hover: "#131313"
+    background: "#131313"
+    card-background: "#2b2b2b"
+    text: "#eaeaea"
+    text-header: "#ffffff"
+    text-title: "ffffff"
+    text-subtitle: "#f5f5f5"
+    card-shadow: rgba(0, 0, 0, 0.4)
+    link: "#3273dc"
+    link-hover: "#ffdd57"
+
+
+# Optional theming
+#theme: default # 'default' or one of the themes available in 'src/assets/themes'.
+
+
+
+# Optional message
+#message:
+#  #url: https://b4bz.io
+#  style: "is-dark" # See https://bulma.io/documentation/components/message/#colors for styling options.
+#  title: "Demo !"
+#  icon: "fa fa-grin"
+
+# Optional navbar
+# links: [] # Allows for navbar (dark mode, layout, and search) without any links
+#links:
+#  - name: "Contribute"
+#    icon: "fab fa-github"
+#    url: "https://github.com/bastienwirtz/homer"
+#    target: "_blank" # optional html a tag target attribute
+#  - name: "Wiki"
+#    icon: "fas fa-book"
+#    url: "https://www.wikipedia.org/"
+  # this will link to a second homer page that will load config from additional-page.yml and keep default config values as in config.yml file
+  # see url field and assets/additional-page.yml.dist used in this example:
+  #- name: "another page!"
+  #  icon: "fas fa-file-alt"
+  #  url: "#additional-page"
+
+# Services
+# First level array represent a group.
+# Leave only a "items" key if not using group (group name, icon & tagstyle are optional, section separation will not be displayed).
+# Services
+# First level array represent a group.
+# Leave only a "items" key if not using group (group name, icon & tagstyle are optional, section separation will not be displayed).
+services:
+- name: " "
+  icon: "none"
+  items:
+
+      - name: "Assembly Line"
+        logo: "assets/assets/assemblyline.jpg"
+        subtitle: "Malware Analysis"
+        url: "https://10.3.10.109"
+        target: "_blank" # optionnal html a tag target attribute
+
+      - name: "Bookstack"
+        logo: "assets/assets/bookstack.png"
+        tag: "The SOP ways"
+        url: "http://10.3.10.203"
+        target: "_blank"
+
+      - name: "Carbon Black"
+        logo: "assets/assets/carbonblack.png"
+        subtitle: "Endpoint Detection and Response. Cloud access for both delta and tf logs"
+        url: "https://defense-prod05.conferdeploy.net/"
+        target: "_blank" # optionnal html a tag target attribute
+
+      - name: "Chimkin"
+        logo: "assets/assets/chimkin.PNG"
+        subtitle: "OSINT"
+        url: "http://10.3.10.17"
+        target: "_blank" # optionnal html a tag target attribute
+
+      - name: "Cockpit"
+        logo: "assets/assets/cockpit.png"
+        subtitle: "Linux Server Management"
+        url: "https://10.3.10.105:9090/"
+        target: "_blank" # optionnal html a tag target attribute
+
+      - name: "Cortex"
+        logo: "assets/assets/cortex.png"
+        subtitle: "Enrichment"
+        url: "http://10.3.10.203:9001/"
+        target: "_blank" # optionnal html a tag target attribute
+
+      - name: "Cyberchef"
+        logo: "assets/assets/cyberchef.png"
+        subtitle: "The Cyber Swiss Army Knife"
+        url: "http://10.3.10.105:8000"
+        target: "_blank" # optionnal html a tag target attribute
+
+      - name: "Draw.io"
+        logo: "assets/assets/draw.io.png"
+        subtitle: "Diagram Maker"
+        url: "http://10.3.10.105:8001"
+        target: "_blank" # optionnal html a tag target attribute
+
+      - name: "Elasticsearch"
+        logo: "assets/assets/elk3.png"
+        subtitle: "Self monitoring "
+        url: "http://10.3.10.110:5601"
+        target: "_blank" # optionnal html a tag target attribute
+
+      - name: "ESXI"
+        logo: "assets/assets/esxi.jpg"
+        subtitle: "VM Management"
+        url: "https://10.3.10.10"
+        target: "_blank" # optionnal html a tag target attribute
+
+      - name: "Fortigate"
+        logo: "assets/assets/forti.png"
+        subtitle: "Firewall Management"
+        url: "https://10.2.10.1"
+        target: "_blank" # optionnal html a tag target attribute
+
+      - name: "MISP"
+        logo: "assets/assets/misp.png"
+        subtitle: "IOC's"
+        url: "http://10.3.10.201"
+        target: "_blank" # optionnal html a tag target attribute
+
+      - name: "n8n"
+        logo: "assets/assets/n8n.png"
+        subtitle: "Automation"
+        url: "http://10.3.10.203:5678"
+        target: "_blank" # optionnal html a tag target attribute
+
+      - name: "NAS"
+        logo: "assets/assets/nas.png"
+        subtitle: "Network-attached storage"
+        url: "https://10.3.10.108/"
+        target: "_blank" # optionnal html a tag target attribute
+
+      - name: "OpenCTI"
+        logo: "assets/assets/opencti.png"
+        subtitle: "Threat Intel"
+        url: "http://10.3.10.203:8080"
+        target: "_blank" # optionnal html a tag target attribute
+
+      - name: "OwnCloud"
+        logo: "assets/assets/owncloud2.png"
+        subtitle: "file xfer"
+        url: "http://10.3.10.105:9003/login"
+        target: "_blank" # optionnal html a tag target attribute
+
+      - name: "PLANKA"
+        logo: "assets/assets/planka.jpg"
+        subtitle: "Project Management"
+        url: "http://10.3.10.203:3000"
+        target: "_blank" # optionnal html a tag target attribute
+
+      - name: "Portainer"
+        logo: "/assets/assets/portainer.png"
+        subtitle: "docker mgmt"
+        url: "https://10.3.10.105:9443"
+        target: "_blank" # optionnal html a tag target attribute
+
+      - name: "thehive"
+        logo: "assets/assets/thehive.png"
+        subtitle: "Ticket System"
+        url: "http://10.3.10.105:9001"
+        target: "_blank" # optionnal html a tag target attribute
+
+      - name: "OPNsense"
+        logo: "assets/assets/opn.png"
+        subtitle: "Firewall"
+        url: "https://10.3.10.1"
+        target: "_blank" # optionnal html a tag target attribute
+
+
+#      - name: "X-WIKI"
+#        logo: "assets/assets/xwiki.png"
+#        tag: "The Derek Zoolander Center for Kids Who Can't Read Good and Who Wanna Learn to Do Other Stuff Good Too"
+#        url: "http://10.3.10.106:8080"
+#        target: "_blank" # optionnal html a tag target attribute
+
+#      - name: "UXVha2U="
+#        logo: "assets/assets/quake2.png"
+#        subtitle: "Old School Cool"
+#        tag: "I am on your side, Corporal"
+#        url: "http://10.3.10.105:666"
+#        target: "_blank" # optionnal html a tag target attribute
+
+#      - name: "DATABASED"
+#        logo: "assets/assets/crabbucket.png"
+#        subtitle: "Databased"
+#        url: "http://10.3.10.115:3000"
+#        target: "_blank" # optionnal html a tag target attribute

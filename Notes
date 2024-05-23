@@ -1,0 +1,3 @@
+Portainer times out admin creation, or db has issues and denies login.
+Fix is to go delete /var/lib/docker/volumes/portainer/_data/portainer.db
+This will cause portainer to prompt for a new account creation on login and then rediscover the local enviroment.
